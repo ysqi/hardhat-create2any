@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Hardhat plugin to automatically deploy the ERC-1820 Registry contract.",
   "repository": "github:ysqi/hardhat-create2any",
-  "author": "David Mihal",
+  "author": "Qui Yu",
   "license": "MIT",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

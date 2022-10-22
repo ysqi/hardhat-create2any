@@ -5,7 +5,7 @@ Hardhat plugin to automatically deploy the [`create2any`](https://github.com/ysq
 ## Installation
 
 ```bash
-yarn install hardhat-create2any
+yarn add --dev hardhat-create2any
 ```
 
 Import the plugin in your `hardhat.config.js`:
