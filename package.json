@@ -1,0 +1,35 @@
+{
+  "name": "hardhat-create2any",
+  "version": "0.1.0",
+  "description": "Hardhat plugin to automatically deploy the ERC-1820 Registry contract.",
+  "repository": "github:ysqi/hardhat-create2any",
+  "author": "David Mihal",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint:fix": "prettier --write 'src/**/*.{js,ts}' && tslint --fix --config tslint.json --project tsconfig.json",
+    "lint": "tslint --config tslint.json --project tsconfig.json",
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "files": [
+    "dist/",
+    "src/",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "@types/fs-extra": "^5.0.4",
+    "@types/node": "^8.10.38",
+    "hardhat": "^2.11.0",
+    "prettier": "2.0.5",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^4.0.3"
+  },
+  "peerDependencies": {
+    "hardhat": "^2.11.0"
+  }
+}
