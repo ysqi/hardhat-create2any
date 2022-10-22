@@ -1,6 +1,6 @@
 {
   "name": "hardhat-create2any",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Hardhat plugin to automatically deploy the ERC-1820 Registry contract.",
   "repository": "github:ysqi/hardhat-create2any",
   "author": "Qui Yu",
