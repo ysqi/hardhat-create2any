@@ -29,6 +29,8 @@ async function ensureCreate2any(provider: EthereumProvider): Promise<void> {
     await provider.send("eth_sendRawTransaction", [CREATE2ANY_PAYLOAD]);
 
     console.log("create2any creator successfully deployed");
+  } else {
+    console.debug("create2any exist");
   }
 }
 
@@ -44,6 +46,12 @@ subtask(TASK_NODE_GET_PROVIDER).setAction(
 subtask(TASK_TEST_SETUP_TEST_ENVIRONMENT).setAction(
   async (args: any, hre: any, runSuper: any): Promise<void> => {
     await runSuper(args);
+    await ensureCreate2any(hre.network.provider);
+  }
+);
+
+subtask("ensureCreate2any").setAction(
+  async (args: any, hre: any, runSuper: any): Promise<void> => {
     await ensureCreate2any(hre.network.provider);
   }
 );

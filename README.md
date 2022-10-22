@@ -19,3 +19,9 @@ Or if you are using TypeScript, in your `hardhat.config.ts`:
 ```ts
 import "hardhat-create2any";
 ```
+
+You also can run it as hardhat task:
+
+```ts
+hre.run("ensureCreate2any");
+```

@@ -1,4 +1,5 @@
 import { ethers } from "hardhat";
+const hre = require("hardhat");
 
 const CREATE2ANY_ADDRESS = "0x49088917Be000E083963312b50866fDf52798A8b";
 describe("AutoDeployContract", function () {
@@ -13,5 +14,9 @@ describe("AutoDeployContract", function () {
       "0x0000000000000000000000000000000000000000000000000000000000000888";
     const address = await factory.findCreate2Address(salt, "0x00");
     console.log(`address is ${address}`);
+  });
+
+  it("Run as task", async function () {
+    await hre.run("ensureCreate2any");
   });
 });

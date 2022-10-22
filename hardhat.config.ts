@@ -1,5 +1,4 @@
-// import "@typechain/hardhat";
-import "@nomiclabs/hardhat-ethers";
+import "@nomicfoundation/hardhat-toolbox";
 
 import "./src/index";
 
@@ -8,4 +7,6 @@ import "./src/index";
 /**
  * @type import('hardhat/config').HardhatUserConfig
  */
-module.exports = {};
+module.exports = {
+  solidity: "0.8.6",
+};
