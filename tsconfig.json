@@ -8,9 +8,9 @@
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDirs": ["./src"],
     "composite": true
   },
   "exclude": ["./dist", "./node_modules"],
-  "include": ["./src", "./test"]
+  "include": ["./src"]
 }
